@@ -25,6 +25,15 @@ def puzzle_a():
     print('\nPuzzle A')
     print('~~~~~~~~~')
 
+    first_name = input("What's your first name?: ")
+
+    second_name = input("What's your second name?: ")
+
+    message = "Your full name is " + " ".join([first_name, second_name])
+
+    print(message)
+
+
 
 def example_b():
     print('\nExample B')
@@ -44,6 +53,11 @@ def example_b():
 def puzzle_b():
     print('\nPuzzle B')
     print('~~~~~~~~~~~')
+
+    user_input = input("\n Input a sentence with the word \"and\" in it: ")
+
+    result = user_input.replace("and", "&")
+    print(result)
 
 
 def example_c():
@@ -74,16 +88,25 @@ def puzzle_c():
     print('\nPuzzle C')
     print('~~~~~~~~~~~')
 
+    sentence = input("\n Please enter a sentence: ")
+
+    word1 = input("Which word will we replace?: ")
+
+    word2 = input("Replace it with what?: ")
+
+    output = sentence.replace(word1, word2)
+    print(output)
+
 
 if __name__ == '__main__':
 
     # Run the puzzles
 
-    example_a()
-    # puzzle_a()
+    # example_a()
+    puzzle_a()
 
-    example_b()
-    # puzzle_b()
+    # example_b()
+    puzzle_b()
 
-    example_c()
-    # puzzle_c()
+    # example_c()
+    puzzle_c()
